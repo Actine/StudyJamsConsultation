@@ -62,8 +62,16 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(new LandmarksAdapter(this, container, landmarks));
     }
 
+    /**
+     * Оголосіть (перекрийте) цей метод, щоби заповнити меню (кнопки у екшн-барі, або/і меню на «трьох крапочках» справа)
+     *
+     * @param menu Система передає в цей метод меню (можливо, частково заповнене деінде), куди потрібно докидати елементи
+     * @return true щоби меню було видиме. Але краще повернути super.onCreateOptionsMenu(menu);
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // MenuInflater, як і LayoutInflater, «розгортає» XML у Java-об’єкти.
+        // Тільки цей наповнює меню із відповідного /res/menu/XML файлу
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
