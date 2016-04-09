@@ -7,10 +7,10 @@
         android:title="Налаштування"
         android:icon="@drawable/ic_settings_white_24dp"
         android:orderInCategory="10"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/help"
+        android:id="@+id/action_help"
         android:title="Довідка"
         android:icon="@mipmap/ic_launcher"
         android:orderInCategory="11"

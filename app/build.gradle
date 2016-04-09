@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "info.teib.newtest"
-        minSdkVersion 19
+        minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -24,6 +24,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
 
-    // Підключити бібліотеку для Recycler View
+    // Підключити бібліотеку для Recycler View. Версія має співпадати із версією appcompat зверху
     compile 'com.android.support:recyclerview-v7:23.3.0'
 }

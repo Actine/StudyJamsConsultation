@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:padding="16dp">
 
     <ImageView
             android:id="@+id/picture"
-            android:layout_width="60dp"
-            android:layout_height="60dp"/>
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
 
     <TextView
             android:id="@+id/title"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/picture"
+            android:layout_toLeftOf="@+id/seen"
+            android:layout_marginLeft="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            tools:text="Замок"/>
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Мукачівський замок-паланок"/>
 
-    <Button
-            android:id="@+id/like"
+    <TextView
+            android:id="@+id/description"
+            android:layout_below="@+id/title"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Замок-паланок володіє древньою історією"/>
+
+    <TextView
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/seen"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Like"/>
+            android:layout_marginLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#388e3c"
+            android:text="Переглянуто"/>
 
-</LinearLayout>
+</RelativeLayout>
