@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NewTest</string>
+
+    <string-array name="landmarks">
+        <item>Ужгородський замок</item>
+        <item>Тячівський замок</item>
+        <item>Середнянський замок</item>
+        <item>Мукачівський замок</item>
+        <item>Чинадіївський замок</item>
+        <item>Радванський замок</item>
+        <item>Березнянський замок</item>
+        <item>Чопський замок</item>
+    </string-array>
+
+</resources>
